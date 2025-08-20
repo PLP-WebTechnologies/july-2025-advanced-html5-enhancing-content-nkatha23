@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pambo Cereals - Enhanced HTML5 Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>PAMBO CEREALS</h1>
+    <p>Your Trusted Cereal Hub</p>
+    <p><strong>Fair. Transparent. Farmer-first aggregation: powered by cash, trust, and real-time pricing.</strong></p>
+  </header>
+
+  <main>
+
+    <!-- Section 1: Product List -->
+    <section>
+      <h2>Available Cereals</h2>
+      <ul>
+        <li>Maize</li>
+        <li>Sorghum</li>
+        <li>Millet</li>
+        <li>Beans</li>
+        <li>Green Grams</li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Pricing Table -->
+    <section>
+      <h2>Current Market Prices (Per 90kg Bag)</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Cereal</th>
+            <th>Price (KES)</th>
+            <th>Last Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maize</td>
+            <td>3,200</td>
+            <td>2025-08-18</td>
+          </tr>
+          <tr>
+            <td>Sorghum</td>
+            <td>2,700</td>
+            <td>2025-08-18</td>
+          </tr>
+          <tr>
+            <td>Millet</td>
+            <td>3,100</td>
+            <td>2025-08-18</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media Section -->
+    <section>
+      <h2>Our Aggregation Process</h2>
+      <video width="320" height="240" controls>
+        <source src="aggregation-process.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Watch how we bring cereals from farm to market with efficiency and fairness.</p>
+    </section>
+
+    <!-- Section 4: Farmer Registration Form -->
+    <section>
+      <h2>Farmer Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required pattern="07[0-9]{8}" maxlength="10"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Farm Details</legend>
+
+          <label for="location">Farm Location:</label><br>
+          <input type="text" id="location" name="location" required><br><br>
+
+          <label for="cereal">Type of Cereal:</label><br>
+          <select id="cereal" name="cereal" required>
+            <option value="">--Select--</option>
+            <option value="maize">Maize</option>
+            <option value="sorghum">Sorghum</option>
+            <option value="millet">Millet</option>
+            <option value="beans">Beans</option>
+          </select><br><br>
+
+          <label for="quantity">Estimated Quantity (bags):</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" max="500" required><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Agreement</legend>
+          <label>
+            <input type="checkbox" name="agree" required>
+            I confirm that the information provided is accurate and truthful.
+          </label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PAMBO CEREALS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
